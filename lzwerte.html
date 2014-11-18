@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>PV-WR</title>
+		<style type="text/css">
+#hor-minimalist-a
+		{
+			font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+			font-size: 12px;
+			background: #fff;
+			margin: 5px;
+			width: 800px;
+			border-collapse: collapse;
+			text-align: left;
+		}
+		#hor-minimalist-a th
+		{
+			font-size: 14px;
+			font-weight: normal;
+			color: #039;
+			padding: 10px 8px;
+			border-bottom: 2px solid #6678b1;
+		}
+		#hor-minimalist-a td
+		{
+			color: #669;
+			padding: 9px 8px 0px 8px;
+		}
+		#hor-minimalist-a tbody tr:hover td
+		{
+			color: #009;
+		}
+		</style>
+	</head>
+	<body>
+		<h3>
+		<table border="0" cellspacing="0" cellpadding="15">
+			<tr>
+				<td>
+					<a href="istw">aktuelle Werte</a>
+				</td>
+				<td>
+					<a href="istd">aktuelle Diagramme</a>
+				</td>
+				<td>
+					Langzeit Werte
+				</td>
+				<td>
+					<a href="lzd">Langzeit Diagramme</a>
+				</td>
+			</tr>
+		</table>
+		</h3>
+		<table border="1" cellspacing="2" cellpadding="5" id="hor-minimalist-a">
+			<tr>
+				<th>
+					Betriebsdaten
+				</th>
+				<th size=100>
+					Heute
+				</th>
+				<th size=100>
+					Gestern
+				</th>
+				<th size=100>
+					Diese Woche
+				</th>
+				<th size=100>
+					Letzte Woche
+				</th>
+				<th size=100>
+					Dieser Monat
+				</th>
+				<th size=100>
+					Letzter Monat
+				</th>
+				<th size=100>
+					Gesamt seit Inbetriebnahme
+				</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					$today0
+				</td>
+				<td>
+					$yesterday0
+				</td>
+				<td>
+					$thisweek0
+				</td>
+				<td>
+					$lastweek0
+				</td>
+				<td>
+					$thismonth0
+				</td>
+				<td>
+					$lastmonth0
+				</td>
+				<td>
+					$total1
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Startzyklen
+				</td>
+				<td>
+					$today1
+				</td>
+				<td>
+					$yesterday1
+				</td>
+				<td>
+					$thisweek1
+				</td>
+				<td>
+					$lastweek1
+				</td>
+				<td>
+					$thismonth1
+				</td>
+				<td>
+					$lastmonth1
+				</td>
+				<td>
+					$total2
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Betriebszeit [h]
+				</td>
+				<td>
+					$today2
+				</td>
+				<td>
+					$yesterday2
+				</td>
+				<td>
+					$thisweek2
+				</td>
+				<td>
+					$lastweek2
+				</td>
+				<td>
+					$thismonth2
+				</td>
+				<td>
+					$lastmonth2
+				</td>
+				<td>
+					$total3
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Energie [kWh]
+				</td>
+				<td>
+					$today3
+				</td>
+				<td>
+					$yesterday3
+				</td>
+				<td>
+					$thisweek3
+				</td>
+				<td>
+					$lastweek3
+				</td>
+				<td>
+					$thismonth3
+				</td>
+				<td>
+					$lastmonth3
+				</td>
+				<td>
+					$total4
+				</td>
+			</tr>
+			<tr>
+				<td>
+					P-min [W]
+				</td>
+				<td>
+					$today4
+				</td>
+				<td>
+					$yesterday4
+				</td>
+				<td>
+					$thisweek4
+				</td>
+				<td>
+					$lastweek4
+				</td>
+				<td>
+					$thismonth4
+				</td>
+				<td>
+					$lastmonth4
+				</td>
+				<td>
+					$total5
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Zeitpunkt
+				</td>
+				<td>
+					$today5
+				</td>
+				<td>
+					$yesterday5
+				</td>
+				<td>
+					$thisweek5
+				</td>
+				<td>
+					$lastweek5
+				</td>
+				<td>
+					$thismonth5
+				</td>
+				<td>
+					$lastmonth5
+				</td>
+				<td>
+					$total6
+				</td>
+			</tr>
+			<tr>
+				<td>
+					P-max [W]
+				</td>
+				<td>
+					$today6
+				</td>
+				<td>
+					$yesterday6
+				</td>
+				<td>
+					$thisweek6
+				</td>
+				<td>
+					$lastweek6
+				</td>
+				<td>
+					$thismonth6
+				</td>
+				<td>
+					$lastmonth6
+				</td>
+				<td>
+					$total7
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Zeitpunkt
+				</td>
+				<td>
+					$today7
+				</td>
+				<td>
+					$yesterday7
+				</td>
+				<td>
+					$thisweek7
+				</td>
+				<td>
+					$lastweek7
+				</td>
+				<td>
+					$thismonth7
+				</td>
+				<td>
+					$lastmonth7
+				</td>
+				<td>
+					$total8
+				</td>
+			</tr>
+		</table>
+	<p>$powerstate</p>
+	<!-- 
+|                                               Typ : PVWR</br>\
+b Istwerte                                                 Stationsnr.: 1967\
+														   Anschlusnr.: 1\
+|     UPV-IST     =   81.6 V       PAC-NETZ  =   0.04 kW     COM Port : 1\
+|     UPV-SOLL    =   94.1 V       FAC-NETZ  =   50.0 Hz         04/01/11\
+|     UAC-NETZ    =  226.5 V       R-ISO     =  500.0 kOhm       11:21:18\
+|     IAC-NETZ    =    0.2 A       T-KK      =   41.1 grdC               \
+|                                                                        \
+|                                                                        \
+|                                                                        \
+| Betriebs - |      T A G      |    W O C H E    |    M O N A T    |total seit\
+|   Daten    |04/01/11|03/01/11|   01/11|   53/11|   01/11|   12/10|  30/06/04\
+| ===========+========+========+========+========+========+========+==========\
+| Startzyklen|      14|      28|      42|      90|     132|    1602|     22681\
+|Betr.zeit[h]|     1.3|     6.7|       8|      12|      20|      96|     24055\
+|Energie[kWh]|     0.0|     1.4|       1|       3|       5|       6|      9855\
+|   P-min [W]|       5|       0|       5|       0|       5|       0|         5\
+|   Zeitpunkt|   10:00|   16:16| 2 10:00| 7 15:35|04 10:00|31 14:23|  04/01/11\
+|   P-max [W]|      49|    1116|    1116|    1158|    1158|     994|      1979\
+|   Zeitpunkt|   10:59|   11:44| 1 11:44| 7 11:33|02 11:33|01 11:36|  04/04/10 -->
+	</body>
+</html>

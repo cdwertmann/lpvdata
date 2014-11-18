@@ -1,0 +1,29 @@
+PV-WR serial commands to retrieve data:
+
+I:
+UPV-IST, UPV-SOLL, UAC-NETZ, IAC-NETZ, PAC-NETZ, FAC-NETZ, R-ISO, T-KK
+
+V:
+Firmware-Version (z.B. 'PVWR-018-N-V6.50')
+
+
+<ENQ> (005) 
+
+
+ZL
+
+BTL
+
+BTV
+
+BWL
+
+BWV
+
+BML
+
+BMV
+
+BGL
+
+

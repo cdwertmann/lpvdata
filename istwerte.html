@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			PV-WR
+		</title>
+		<script type="text/JavaScript">
+<!--
+		function timedRefresh(timeoutPeriod) {
+			timer = setTimeout("location.reload(true);",timeoutPeriod);
+		}
+		function stopTimer()	{
+			clearTimeout(timer);
+		}
+		//-->
+		</script>
+		<style type="text/css">
+#hor-minimalist-a
+		{
+			font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+			font-size: 12px;
+			background: #fff;
+			margin: 5px;
+			width: 480px;
+			border-collapse: collapse;
+			text-align: left;
+		}
+		#hor-minimalist-a th
+		{
+			font-size: 14px;
+			font-weight: normal;
+			color: #039;
+			padding: 10px 8px;
+			border-bottom: 2px solid #6678b1;
+		}
+		#hor-minimalist-a td
+		{
+			color: #669;
+			padding: 9px 8px 0px 8px;
+		}
+		#hor-minimalist-a tbody tr:hover td
+		{
+			color: #009;
+		}
+		</style>
+	</head>
+	<body onload="JavaScript:timedRefresh(2000);">
+		<h3>
+		<table border="0" cellspacing="0" cellpadding="15">
+			<tr>
+				<td>
+					aktuelle Werte
+				</td>
+				<td>
+					<a href="istd" onClick="JavaScript:stopTimer();">aktuelle Diagramme</a>
+				</td>
+				<td>
+					<a href="lzw" onClick="JavaScript:stopTimer();">Langzeit Werte</a>
+				</td>
+				<td>
+					<a href="lzd" onClick="JavaScript:stopTimer();">Langzeit Diagramme</a>
+				</td>
+			</tr>
+		</table>
+		</h3>
+		<table border="1" cellspacing="1" cellpadding="5" id="hor-minimalist-a">
+			<tr>
+				<td>
+					UPV-IST
+				</td>
+				<td>
+					$ist0 V
+				</td>
+				<td>
+					PAC-NETZ
+				</td>
+				<td>
+					$ist4 kW
+				</td>
+			</tr>
+			<tr>
+				<td>
+					UPV-SOLL
+				</td>
+				<td>
+					$ist1 V
+				</td>
+				<td>
+					FAC-NETZ
+				</td>
+				<td>
+					$ist5 Hz
+				</td>
+			</tr>
+			<tr>
+				<td>
+					UAC-NETZ
+				</td>
+				<td>
+					$ist2 V
+				</td>
+				<td>
+					R-ISO
+				</td>
+				<td>
+					$ist6 k&#8486;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					IAC-NETZ
+				</td>
+				<td>
+					$ist3 A
+				</td>
+				<td>
+					T-KK
+				</td>
+				<td>
+					$ist7 &deg;C
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Firmware
+				</td>
+				<td>
+					$fw0
+				</td>
+				<td>
+					Datum/Zeit
+				</td>
+				<td>
+					$zeit0
+				</td>
+			</tr>
+		</table>
+	<p>$powerstate</p>
+<!-- 
+|                                               Typ : PVWR</br>\
+b Istwerte                                                 Stationsnr.: 1967\
+														   Anschlusnr.: 1\
+|     UPV-IST     =   81.6 V       PAC-NETZ  =   0.04 kW     COM Port : 1\
+|     UPV-SOLL    =   94.1 V       FAC-NETZ  =   50.0 Hz         04/01/11\
+|     UAC-NETZ    =  226.5 V       R-ISO     =  500.0 kOhm       11:21:18\
+|     IAC-NETZ    =    0.2 A       T-KK      =   41.1 grdC               \
+|                                                                        \
+|                                                                        \
+|                                                                        \
+| Betriebs - |      T A G      |    W O C H E    |    M O N A T    |total seit\
+|   Daten    |04/01/11|03/01/11|   01/11|   53/11|   01/11|   12/10|  30/06/04\
+| ===========+========+========+========+========+========+========+==========\
+| Startzyklen|      14|      28|      42|      90|     132|    1602|     22681\
+|Betr.zeit[h]|     1.3|     6.7|       8|      12|      20|      96|     24055\
+|Energie[kWh]|     0.0|     1.4|       1|       3|       5|       6|      9855\
+|   P-min [W]|       5|       0|       5|       0|       5|       0|         5\
+|   Zeitpunkt|   10:00|   16:16| 2 10:00| 7 15:35|04 10:00|31 14:23|  04/01/11\
+|   P-max [W]|      49|    1116|    1116|    1158|    1158|     994|      1979\
+|   Zeitpunkt|   10:59|   11:44| 1 11:44| 7 11:33|02 11:33|01 11:36|  04/04/10 -->
+	</body>
+</html>

@@ -1,0 +1,22 @@
+Data table as displayed by SMA PV-WR DOS software:
+
+│                                                                 Typ : PVWR                                                               e
+b Istwerte                                                 Stationsnr.: 1967                                                                
+                                                           Anschlusnr.: 1                                                                  │
+│     UPV-IST     =   81.6 V       PAC-NETZ  =   0.04 kW     COM Port : 1                                                                  │
+│     UPV-SOLL    =   94.1 V       FAC-NETZ  =   50.0 Hz         04/01/11                                                                  │
+│     UAC-NETZ    =  226.5 V       R-ISO     =  500.0 kOhm       11:21:18                                                                  │
+│     IAC-NETZ    =    0.2 A       T-KK      =   41.1 grdC                                                                                 │
+│                                                                                                                                          │
+│                                                                                                                                          │
+│                                                                                                                                          │
+│ Betriebs - │      T A G      │    W O C H E    │    M O N A T    │total seit                                                             │
+│   Daten    │04/01/11│03/01/11│   01/11│   53/11│   01/11│   12/10│  30/06/04                                                             │
+│ ───────────┼────────┼────────┼────────┼────────┼────────┼────────┼──────────                                                             │
+│ Startzyklen│      14│      28│      42│      90│     132│    1602│     22681                                                             │
+│Betr.zeit[h]│     1.3│     6.7│       8│      12│      20│      96│     24055                                                             │
+│Energie[kWh]│     0.0│     1.4│       1│       3│       5│       6│      9855                                                             │
+│   P-min [W]│       5│       0│       5│       0│       5│       0│         5                                                             │
+│   Zeitpunkt│   10:00│   16:16│ 2 10:00│ 7 15:35│04 10:00│31 14:23│  04/01/11                                                             │
+│   P-max [W]│      49│    1116│    1116│    1158│    1158│     994│      1979                                                             │
+│   Zeitpunkt│   10:59│   11:44│ 1 11:44│ 7 11:33│02 11:33│01 11:36│  04/04/10     

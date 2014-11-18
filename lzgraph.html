@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>PV-WR</title>
+	</head>
+	<body>
+		<h3>
+		<table border="0" cellspacing="0" cellpadding="15">
+			<tr>
+				<td>
+					<a href="istw">aktuelle Werte</a>
+				</td>
+				<td>
+					<a href="istd">aktuelle Diagramme</a>
+				</td>
+				<td>
+					<a href="lzw">Langzeit Werte</a>
+				</td>
+				<td>
+					Langzeit Diagramme
+				</td>
+			</tr>
+		</table>
+		</h3>
+		<form name="form" action="" method="get" accept-charset="utf-8">
+			&nbsp;&nbsp;
+			<select name=month>
+			  <option value=0>1-12</option>
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			  <option>6</option>
+			  <option>7</option>
+			  <option>8</option>
+			  <option>9</option>
+			  <option>10</option>
+			  <option>11</option>
+			  <option>12</option>
+			</select>
+			<select name=year>
+			  <option value=11>2011</option>
+			  <option value=12>2012</option>
+			  <option value=13>2013</option>
+			  <option value=14>2014</option>			
+			</select>
+			&nbsp;&nbsp;<input type="submit" value="Graph laden &darr;">
+		</form>
+		<p><img src="lzgraph.png"/></p>
+		<script type="text/javascript">
+		function set_month(choice) { 
+		  var success = -1;
+		  for (var i=0; i < document.form.month.length; i++) {
+		    if (document.form.month.options[i].value == choice) 
+		      success = [i];
+		  }
+		  document.form.month.selectedIndex=success;
+		}
+		function set_year(choice) { 
+		  var success = -1;
+		  for (var i=0; i < document.form.year.length; i++) {
+		    if (document.form.year.options[i].value == choice) 
+		      success = [i];
+		  }
+		  document.form.year.selectedIndex=success;
+		}
+		set_month($month);
+		set_year($year);		
+		</script>
+	</body>
+</html>

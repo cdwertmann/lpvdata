@@ -1,0 +1,37 @@
+Create RRD files like this:
+
+rrdtool create filename.rrd \
+--step '60' \
+--start '1293840000' \
+'DS:Uist:GAUGE:120:U:U' \
+'DS:Usoll:GAUGE:120:U:U' \
+'DS:U:GAUGE:120:U:U' \
+'DS:I:GAUGE:120:U:U' \
+'DS:P:GAUGE:120:U:U' \
+'DS:F:GAUGE:120:U:U' \
+'DS:R:GAUGE:120:U:U' \
+'DS:T:GAUGE:120:U:U' \
+'RRA:AVERAGE:0.5:10:4464'
+
+e.g. 1 value, keep 2 weeks:
+
+rrdtool create istwerte.rrd \
+--step '60' \
+--start '1293840000' \
+'DS:P:GAUGE:120:U:U' \
+'RRA:AVERAGE:0.5:1:20160'
+
+Test graph generation:
+
+rrdtool graph 'istwerte.png' \
+--title 'Istwerte' \
+--width '600' \
+--height '200' \
+--start end-1d \
+'DEF:P=istwerte.rrd:P:AVERAGE' \
+'DEF:U=istwerte.rrd:U:AVERAGE' \
+'VDEF:Plast=P,LAST' \
+'VRULE:Plast#009900' \
+'AREA:P#CC0000:P' \
+'AREA:U#0000FF:U' \
+'PRINT:Plast:%.2lf'
